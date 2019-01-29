@@ -110,8 +110,8 @@
                           {"meta_content_scope": "text.html.basic.embedded.js"},
                           {"include": "scope:text.html.basic"},
                           {"match": "`"},
+                    ],
                     "pop": true
-                    ]
                 }
             }
         ],
