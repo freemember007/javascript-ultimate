@@ -103,7 +103,16 @@
                         "match": "{{otherwise}}",
                         "push": "statement_top_level"
                     }
-                ]
+                ],
+                "with_prototype": {
+                    "match": "`",
+                    "push": [
+                          {"meta_content_scope": "text.html.basic.embedded.js"},
+                          {"include": "scope:text.html.basic"},
+                          {"match": "`"},
+                    "pop": true
+                    ]
+                }
             }
         ],
         "otherwise_invalid": [
